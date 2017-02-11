@@ -18,11 +18,15 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        print(text1.text!)
-        print(text2.text!)
-         
+        var addition = true
+        
+        if addition {
+        coolLabel.text = "Anser: \(Double(text1.text!)! + Double(text2.text!)!)"
+        
+        } else {
+            coolLabel.text = "Anser: \(Double(text1.text!)! + Double(text2.text!)!)"
         }
-    
+    }
     
     
     override func viewDidLoad() {
